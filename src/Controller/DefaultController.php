@@ -16,4 +16,13 @@ class DefaultController extends AbstractController
             'controller_name' => 'DefaultController',
         ]);
     }
+    /**
+     * @Route("/layout", name="layout")
+     */
+    public function layout()
+    {
+        return $this->render('default/layout.html.twig', [
+            'controller_name' => 'DefaultController',
+        ]);
+    }
 }
