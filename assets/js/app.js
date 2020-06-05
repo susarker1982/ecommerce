@@ -1,10 +1,10 @@
     // assets/js/app.js
     import Vue from 'vue';
-    import Example from './components/Example';
+    import Frontend from './components/Frontend';
     /**
     * Create a fresh Vue Application instance
     */
     new Vue({
       el: '#app',
-      components: {Example}
+      components: {Frontend}
     });

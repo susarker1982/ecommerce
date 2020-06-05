@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}
+            <!-- Google Font -->
+            <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+            <!-- Css Styles -->
+            <link rel="stylesheet" href="{{ asset('/layout/css/bootstrap.min.css') }}" type="text/css">
+            <link rel="stylesheet" href="{{ asset('/layout/css/font-awesome.min.css') }}" type="text/css">
+            <link rel="stylesheet" href="{{ asset('/layout/css/elegant-icons.css') }}" type="text/css">
+            <link rel="stylesheet" href="{{ asset('/layout/css/nice-select.css') }}" type="text/css">
+            <link rel="stylesheet" href="{{ asset('/layout/css/jquery-ui.min.css') }}" type="text/css">
+            <link rel="stylesheet" href="{{ asset('/layout/css/owl.carousel.min.css') }}" type="text/css">
+            <link rel="stylesheet" href="{{ asset('/layout/css/slicknav.min.css') }}" type="text/css">
+            <link rel="stylesheet" href="{{ asset('/layout/css/style.css') }}" type="text/css">
+        {% endblock %}
+    </head>
+    <body>
+        <div id="app">
+            {% block body %}{% endblock %}
+        </div>
+        {% block javascripts %}
+            <!-- Js Plugins -->
+            <script src="{{ asset('/layout/js/jquery-3.3.1.min.js') }}"></script>
+            <script src="{{ asset('/layout/js/bootstrap.min.js') }}"></script>
+            <script src="{{ asset('/layout/js/jquery.nice-select.min.js') }}"></script>
+            <script src="{{ asset('/layout/js/jquery-ui.min.js') }}"></script>
+            <script src="{{ asset('/layout/js/jquery.slicknav.js') }}"></script>
+            <script src="{{ asset('/layout/js/mixitup.min.js') }}"></script>
+            <script src="{{ asset('/layout/js/owl.carousel.min.js') }}"></script>
+            <script src="{{ asset('/layout/js/main.js') }}"></script>
+            <!--Add Vue JS -->
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %}
+    </body>
+</html>
