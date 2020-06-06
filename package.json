@@ -16,7 +16,9 @@
         "build": "encore production --progress"
     },
     "dependencies": {
+        "jquery": "^3.5.1",
         "vue": "^2.6.11",
+        "vue-jquery": "^1.0.6",
         "vue-router": "^3.3.2",
         "vuetify": "^2.2.32"
     }
