@@ -48,8 +48,8 @@
                 <div class="col-lg-6">
                     <nav class="header__menu">
                         <ul>
-                            <li class="active"><a href="./index.html">Home</a></li>
-                            <li><a href="./shop-grid.html">Shop</a></li>
+                            <li class="active"><router-link to="/">Home</router-link></li>
+                            <li><router-link to="/shop">Shop</router-link></li>
                             <li><a href="#">Pages</a>
                                 <ul class="header__menu__dropdown">
                                     <li><a href="./shop-details.html">Shop Details</a></li>
@@ -58,7 +58,7 @@
                                     <li><a href="./blog-details.html">Blog Details</a></li>
                                 </ul>
                             </li>
-                            <li><a href="./blog.html">Blog</a></li>
+                            <li><router-link to="/blog">Blog</router-link></li>
                             <li><a href="./contact.html">Contact</a></li>
                         </ul>
                     </nav>
